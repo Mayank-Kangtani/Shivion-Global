@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Shivion Global</title>
+    <meta name="description" content="View our gallery of premium agricultural products, facilities, and packaging.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            aspect-ratio: 1 / 1;
+            cursor: pointer;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-overlay {
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem;
+            background: linear-gradient(transparent, rgba(15, 61, 62, 0.9));
+            color: white;
+            transition: bottom 0.3s ease;
+        }
+        .gallery-item:hover .gallery-overlay {
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Shivion <span>Global</span></a>
+            <button class="mobile-menu-btn">â˜°</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                                        <li class="dropdown">
+                        <a href="products.html">Our Products ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="products.html#fruits">Fruits</a></li>
+                            <li><a href="products.html#spices">Spices</a></li>
+                            <li><a href="products.html">Fresh Vegetables</a></li>
+                            <li><a href="products.html">Peanuts</a></li>
+                            <li><a href="products.html">Cereals</a></li>
+                            <li><a href="products.html">Herbs</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Gallery</h1>
+    </div>
+
+    <!-- Gallery Content -->
+    <section class="section">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 class="section-title">A Glimpse of <span>Excellence</span></h2>
+                <p style="color: var(--text-light); max-width: 700px; margin: 0 auto;">Browse through our collection of product images, packaging facilities, and farms. We maintain the highest standards of hygiene and quality at every step.</p>
+            </div>
+
+            <div class="gallery-grid fade-in-section">
+                <a href="product-spices.html" style="text-decoration: none; display: block;" class="gallery-item">
+                    <img src="images/hero_bg.jpg" alt="Spices Assortment">
+                    <div class="gallery-overlay">
+                        <h4>Premium Spices Assortment</h4>
+                    </div>
+                </a>
+                <a href="product-mangoes.html" style="text-decoration: none; display: block;" class="gallery-item">
+                    <img src="images/fruits.jpg" alt="Fresh Fruits">
+                    <div class="gallery-overlay">
+                        <h4>Export Quality Fruits</h4>
+                    </div>
+                </a>
+                <a href="product-spices.html" style="text-decoration: none; display: block;" class="gallery-item">
+                    <img src="images/spices.jpg" alt="Spices Close up">
+                    <div class="gallery-overlay">
+                        <h4>Finest Indian Spices</h4>
+                    </div>
+                </a>
+                <!-- Repeating images to show grid layout (placeholders) -->
+                <div class="gallery-item">
+                    <div style="width:100%; height:100%; background:var(--bg-alt); display:flex; align-items:center; justify-content:center; color:var(--text-light);">Image Placeholder</div>
+                    <div class="gallery-overlay">
+                        <h4>Packaging Facility</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                     <div style="width:100%; height:100%; background:var(--bg-alt); display:flex; align-items:center; justify-content:center; color:var(--text-light);">Image Placeholder</div>
+                    <div class="gallery-overlay">
+                        <h4>Farm Sourcing</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                     <div style="width:100%; height:100%; background:var(--bg-alt); display:flex; align-items:center; justify-content:center; color:var(--text-light);">Image Placeholder</div>
+                    <div class="gallery-overlay">
+                        <h4>Ready for Export</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Shivion Global</h3>
+                    <p>Your trusted partner in premium agricultural trading. Exporting the finest fruits and spices globally.</p>
+                </div>
+                <div class="footer-col">
+                    <h3 style="color: #fff;">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                                            <li class="dropdown">
+                        <a href="products.html">Our Products ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="products.html#fruits">Fruits</a></li>
+                            <li><a href="products.html#spices">Spices</a></li>
+                            <li><a href="products.html">Fresh Vegetables</a></li>
+                            <li><a href="products.html">Peanuts</a></li>
+                            <li><a href="products.html">Cereals</a></li>
+                            <li><a href="products.html">Herbs</a></li>
+                        </ul>
+                    </li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 style="color: #fff;">Contact Info</h3>
+                    <ul class="footer-links">
+                        <li>ðŸ“ 123 Global Trade Hub, Business Ave.</li>
+                        <li>ðŸ“ž +91 98765 43210</li>
+                        <li>âœ‰ï¸ info@shivionglobal.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shivion Global. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

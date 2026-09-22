@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | Shivion Global</title>
+    <meta name="description" content="Explore Shivion Global's wide range of premium agricultural products, including fresh fruits and Indian spices.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .product-category {
+            margin-bottom: 5rem;
+        }
+        .product-category-title {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+        .product-item {
+            display: flex;
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+        .product-item img {
+            width: 300px;
+            object-fit: cover;
+        }
+        .product-details {
+            padding: 2rem;
+            flex-grow: 1;
+        }
+        .product-details h4 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        .product-specs {
+            margin-top: 1rem;
+            background: var(--bg-alt);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .product-specs ul {
+            list-style-type: none;
+        }
+        .product-specs li {
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+        .product-specs li strong {
+            color: var(--primary);
+        }
+        @media (max-width: 768px) {
+            .product-item {
+                flex-direction: column;
+            }
+            .product-item img {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Shivion <span>Global</span></a>
+            <button class="mobile-menu-btn">â˜°</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                                        <li class="dropdown">
+                        <a href="products.html">Our Products ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="products.html#fruits">Fruits</a></li>
+                            <li><a href="products.html#spices">Spices</a></li>
+                            <li><a href="products.html">Fresh Vegetables</a></li>
+                            <li><a href="products.html">Peanuts</a></li>
+                            <li><a href="products.html">Cereals</a></li>
+                            <li><a href="products.html">Herbs</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Our Products</h1>
+    </div>
+
+    <!-- Products Content -->
+    <section class="section">
+        <div class="container">
+            
+            <!-- Fruits Category -->
+            <div id="fruits" class="product-category fade-in-section">
+                <h2 class="product-category-title">Fresh Fruits</h2>
+                <p style="color: var(--text-light); margin-bottom: 2rem; max-width: 800px;">We export a wide variety of fresh, hand-picked fruits that are nurtured in optimal climatic conditions. Our advanced packaging ensures they reach you with farm-fresh vitality.</p>
+                
+                <div class="product-item">
+                    <img src="images/fruits.jpg" alt="Mangoes">
+                    <div class="product-details">
+                        <h4>Premium Mangoes</h4>
+                        <p style="color: var(--text-light);">Known as the king of fruits, our mangoes are prized for their sweetness, richness, and flavor. We export popular varieties like Alphonso and Kesar.</p>
+                        <div class="product-specs">
+                            <ul>
+                                <li><strong>Origin:</strong> India</li>
+                                <li><strong>Packaging:</strong> 3kg / 5kg Corrugated Boxes</li>
+                                <li><strong>Availability:</strong> April to July</li>
+                            </ul>
+                        </div>
+                        <a href="product-mangoes.html" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-block;">View Full Details</a>
+                    </div>
+                </div>
+
+                <!-- Placeholder for more fruits -->
+            </div>
+
+            <!-- Spices Category -->
+            <div id="spices" class="product-category fade-in-section">
+                <h2 class="product-category-title">Authentic Spices</h2>
+                <p style="color: var(--text-light); margin-bottom: 2rem; max-width: 800px;">Experience the vibrant colors and intense aromas of our premium Indian spices. Carefully processed and hygienically packed to retain their essential oils.</p>
+                
+                <div class="product-item">
+                    <img src="images/spices.jpg" alt="Spices Assortment">
+                    <div class="product-details">
+                        <h4>Premium Cardamom & Cloves</h4>
+                        <p style="color: var(--text-light);">Hand-sorted green cardamom pods and robust cloves, offering unparalleled aroma and flavor for culinary and medicinal uses.</p>
+                        <div class="product-specs">
+                            <ul>
+                                <li><strong>Purity:</strong> 99% Sortex Cleaned</li>
+                                <li><strong>Packaging:</strong> 10kg / 25kg PP Bags or Custom Pouches</li>
+                                <li><strong>Availability:</strong> Year-round</li>
+                            </ul>
+                        </div>
+                        <a href="product-spices.html" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-block;">View Full Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Shivion Global</h3>
+                    <p>Your trusted partner in premium agricultural trading. Exporting the finest fruits and spices globally.</p>
+                </div>
+                <div class="footer-col">
+                    <h3 style="color: #fff;">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                                            <li class="dropdown">
+                        <a href="products.html">Our Products ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="products.html#fruits">Fruits</a></li>
+                            <li><a href="products.html#spices">Spices</a></li>
+                            <li><a href="products.html">Fresh Vegetables</a></li>
+                            <li><a href="products.html">Peanuts</a></li>
+                            <li><a href="products.html">Cereals</a></li>
+                            <li><a href="products.html">Herbs</a></li>
+                        </ul>
+                    </li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 style="color: #fff;">Contact Info</h3>
+                    <ul class="footer-links">
+                        <li>ðŸ“ 123 Global Trade Hub, Business Ave.</li>
+                        <li>ðŸ“ž +91 98765 43210</li>
+                        <li>âœ‰ï¸ info@shivionglobal.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shivion Global. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
