@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+﻿document.addEventListener('DOMContentLoaded', () => {
     // Header Scroll Effect
     const header = document.querySelector('header');
     
@@ -14,6 +14,25 @@ document.addEventListener('DOMContentLoaded', () => {
             header.classList.remove('scrolled');
         }
     });
+
+
+    // Dropdown Click Toggle
+    const dropdownToggle = document.querySelector('.dropdown > a');
+    const dropdown = document.querySelector('.dropdown');
+    
+    if (dropdownToggle && dropdown) {
+        dropdownToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            dropdown.classList.toggle('active');
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('active');
+            }
+        });
+    }
 
     // Mobile Menu Toggle
     const menuBtn = document.querySelector('.mobile-menu-btn');
@@ -99,3 +118,4 @@ function googleTranslateElementInit() {
         autoDisplay: false
     }, 'google_translate_element');
 }
+
