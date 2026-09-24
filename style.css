@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 :root {
     --primary: #0F3D3E;
@@ -577,3 +577,6 @@ body {
     cursor: pointer;
 }
 
+
+iframe.goog-te-banner-frame { display: none !important; }
+.VIpgJd-ZVi9od-ORHb-OEVmcd { display: none !important; }
