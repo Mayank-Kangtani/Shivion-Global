@@ -558,4 +558,22 @@ footer {
 .goog-logo-link {
     display: none !important;
 }
+/* Hide the Google Translate Top Banner */
+.goog-te-banner-frame.skiptranslate, .VIpgJd-ZVi9od-aZ2wEe-wOHMyf {
+    display: none !important;
+}
+body {
+    top: 0px !important; 
+}
+/* Clean up the dropdown styling */
+.goog-te-gadget .goog-te-combo {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary);
+    background: rgba(15, 61, 62, 0.9);
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    outline: none;
+    cursor: pointer;
+}
 

@@ -94,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({
         pageLanguage: 'en',
+        includedLanguages: 'ar,es,fr,de,hi,zh-CN,ru',
         layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
         autoDisplay: false
     }, 'google_translate_element');
