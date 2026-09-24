@@ -62,4 +62,39 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeElements.forEach(el => {
         observer.observe(el);
     });
+
+    // Lightbox Logic
+    const galleryImages = document.querySelectorAll('.gallery-img-trigger');
+    const lightbox = document.getElementById('imageLightbox');
+    const lightboxImg = document.getElementById('lightboxImage');
+    const closeLightbox = document.querySelector('.lightbox-close');
+
+    if (lightbox && galleryImages.length > 0) {
+        galleryImages.forEach(img => {
+            img.addEventListener('click', function() {
+                lightbox.style.display = 'block';
+                lightboxImg.src = this.src;
+            });
+        });
+
+        closeLightbox.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        // Close on clicking outside the image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target !== lightboxImg) {
+                lightbox.style.display = 'none';
+            }
+        });
+    }
 });
+
+// Google Translate Initialization
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+    }, 'google_translate_element');
+}

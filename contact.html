@@ -95,6 +95,7 @@
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="certificates.html">Certificates</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
+                    <li><div id="google_translate_element"></div></li>
                 </ul>
             </nav>
         </div>
@@ -154,23 +155,54 @@
                     <form action="https://formsubmit.co/mkangtani09@gmail.com" method="POST">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_subject" value="New Message from Shivion Global Website!">
+                        
                         <div class="form-group">
                             <label for="name">Full Name *</label>
                             <input type="text" id="name" name="name" required placeholder="John Doe">
                         </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" placeholder="Your Company Ltd.">
+                        </div>
+
                         <div class="form-group">
                             <label for="email">Email Address *</label>
                             <input type="email" id="email" name="email" required placeholder="john@example.com">
                         </div>
+                        
                         <div class="form-group">
-                            <label for="subject">Subject *</label>
-                            <input type="text" id="subject" name="subject" required placeholder="Product Inquiry">
+                            <label for="country">Country of Destination *</label>
+                            <input type="text" id="country" name="country" required placeholder="e.g. UAE, UK, USA">
                         </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div class="form-group">
+                                <label for="product">Product of Interest *</label>
+                                <select id="product" name="product" required style="width: 100%; padding: 1rem; border: 1px solid #ddd; border-radius: 8px; font-family: 'Outfit', sans-serif;">
+                                    <option value="" disabled selected>Select a Product...</option>
+                                    <option value="Fresh Fruits">Fresh Fruits</option>
+                                    <option value="Spices">Spices</option>
+                                    <option value="Fresh Vegetables">Fresh Vegetables</option>
+                                    <option value="Peanuts">Peanuts</option>
+                                    <option value="Cereals">Cereals</option>
+                                    <option value="Herbs">Herbs</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="quantity">Estimated Quantity *</label>
+                                <input type="text" id="quantity" name="quantity" required placeholder="e.g. 1 Container, 500kg">
+                            </div>
+                        </div>
+
                         <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your requirements..."></textarea>
+                            <label for="message">Additional Requirements *</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Tell us about specific packaging, certifications, or delivery requirements..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Request Quote</button>
                     </form>
                 </div>
             </div>
@@ -220,6 +252,19 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+    <!-- Lightbox Modal -->
+    <div id="imageLightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightboxImage">
+    </div>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
+
+
+
 
