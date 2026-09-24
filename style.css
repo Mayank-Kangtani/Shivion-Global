@@ -615,8 +615,9 @@ iframe.goog-te-banner-frame { display: none !important; }
         transform: translateY(-50%);
     }
     .page-header h1 { font-size: 1.8rem !important; }
-    .page-header { height: 25vh !important; margin-bottom: 0 !important; }
+    .page-header { height: 35vh !important; padding-top: 80px; margin-bottom: 1rem !important; }
     .section { padding: 2rem 0 !important; }
     .hero-content { padding: 0 1rem; width: 100%; box-sizing: border-box; }
     .hero-content p { padding: 0 1rem; }
 }
+
